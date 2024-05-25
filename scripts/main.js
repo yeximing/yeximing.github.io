@@ -2,9 +2,11 @@ let myImage = document.getElementById("mainpic");
 
 myImage.onclick = function () {
 	let mySrc = myImage.getAttribute("src");
-	if (mySrc === "images/noell.jpg") {
+	if ((mySrc === "images/noell.jpg") | (mySrc === "images/noell_long.jpg")) {
+		myImage.setAttribute("srcset", "images/hutao.jpg 1200w, images/hutao_long.jpg 600w");
 		myImage.setAttribute("src", "images/hutao.jpg");
 	} else {
+		myImage.setAttribute("srcset", "images/noell.jpg 1200w, images/noell_long.jpg 600w");
 		myImage.setAttribute("src", "images/noell.jpg");
 	}
 };

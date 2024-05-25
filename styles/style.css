@@ -6,7 +6,7 @@ html {
 	font-family: "Open Sans", sans-serif; /* 这应该是你从 Google Fonts 得到的其余输出。 */
 }
 body {
-	width: 600px;
+	width: 800px;
 	margin: 0 auto;
 	background-color: #ff9500;
 	padding: 0 20px 20px 20px;
